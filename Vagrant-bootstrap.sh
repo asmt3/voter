@@ -29,6 +29,11 @@ sudo apt-get -y install mysql-server-5.5
 # sudo apt-get -y install mailutils
 # sudo service postfix reload
 
+# firephp
+sudo apt-get install php-pear
+sudo pear channel-discover pear.firephp.org
+sudo pear install firephp/FirePHPCore
+
 # reload apache service
 sudo service apache2 reload
 
