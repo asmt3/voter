@@ -17,7 +17,7 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 				class="btn btn-default fb-share" 
 				href="#"
 			>
-				Share <?php echo $user['Fbuser']['first_name'];?>'s flag
+				Share <?php echo $user['Fbuser']['first_name'];?>'s banner
 			</a> 
 			<br>
 			(you'll see a preview before the image actually gets shared)
@@ -34,7 +34,7 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 <div class="row">
 	<div class="col-md-12">
 		<h2>
-			Change <?php echo $user['Fbuser']['first_name'];?>'s flag
+			Change <?php echo $user['Fbuser']['first_name'];?>'s banner
 		</h2>
 		
 	</div>
@@ -44,7 +44,7 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 
 <div class="row">
 	<div class="col-md-12">
-		<p>You need to be logged in to change <?php echo $user['Fbuser']['first_name'];?>'s flag.</p>
+		<p>You need to be logged in to change <?php echo $user['Fbuser']['first_name'];?>'s banner.</p>
 		<p>
 			<a class="fb-login btn btn-default" href="#">Login with Facebook</a>
 		</p>
@@ -55,9 +55,9 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 
 	<div class="row">
 	<div class="col-md-12">
-		<p>You are not friends with <?php echo $user['Fbuser']['first_name'];?> so you can't change their flag. But you can... </p>
+		<p>You are not friends with <?php echo $user['Fbuser']['first_name'];?> so you can't change their banner. But you can... </p>
 		<p>
-			<a class="btn btn-default" href="/me">Create your own flag here</a>
+			<a class="btn btn-default" href="/me">Create your own banner here</a>
 		</p>
 	</div>
 </div>

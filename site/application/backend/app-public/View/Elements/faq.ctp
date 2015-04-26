@@ -9,17 +9,17 @@
 		</dd>
 
 		<dt>
-			How are the colours in the flag chosen?
+			How are the colours in the banner chosen?
 		</dt>
 		<dd>
 			The colours in the image above are chosen based on the political party choices of <?php echo $user['Fbuser']['first_name'];?> and her/his Facebook friends. The amount of space given to each colour is proportional to the number of your friends who have chosen each colour/party.
 		</dd>
-<!-- 
+ 
 		<dt>
 			Are you trying to promote one party in particular?
 		</dt>
-		<dd>No.</dd>
--->
+		<dd>Nope.</dd>
+
 		<dt>
 			How are the parties/colours ordered?
 		</dt>

@@ -12,13 +12,13 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 
 
 		<p class="share-cta">
-			See how your friends' votes would change this flag and...
+			See how your friends' votes would change this banner and...
 			<a 
 				data-share-href="<?php echo Configure::read('BASE_URL'); ?>/f/<?php echo $user['User']['id']?>"
 				class="btn btn-default fb-share" 
 				href="#"
 			>
-				Share your flag on Facebook
+				Share your banner on Facebook
 			</a> 
 			<br>
 			(you'll see a preview before the image actually gets shared)
