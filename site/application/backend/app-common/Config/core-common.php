@@ -40,7 +40,13 @@ require_once(__DIR__ . '/keys.php');
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
+
+if (Configure::read('ENVIRONMENT') == 'PRODUCTION') {
+	Configure::write('debug', 0);
+} else {
 	Configure::write('debug', 2);
+}
+	
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
