@@ -14,7 +14,7 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 		<p class="share-cta">
 			See how your friends' votes would change this banner and...
 			<a 
-				data-share-href="<?php echo Configure::read('BASE_URL'); ?>/f/<?php echo $user['User']['id']?>"
+				data-share-href="<?php echo Configure::read('BASE_URL'); ?>/f/<?php echo $user['User']['id']?>?<?php echo time() ?>"
 				class="btn btn-default fb-share" 
 				href="#"
 			>
