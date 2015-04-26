@@ -67,7 +67,7 @@
     	content="If We Were In Charge">
 	<meta 
 		property="og:url" 
-		content="<?php echo Configure::read('BASE_URL') . $this->here; ?>">
+		content="<?php echo Configure::read('BASE_URL') . $this->request->here(); ?>">
     <meta 
     	property="og:title" 
     	content="<?php echo $title; ?>">
