@@ -54,6 +54,6 @@
 		</dd>
 
 		<dt>This doesn't make sense at all.</dt>
-		<dd>Just pick a damn colour and share the colorful image.</dd>
+		<dd>Just pick a damn colour and share it on Facebook.</dd>
 	</dl>
 </div>
