@@ -42,7 +42,7 @@ require_once(__DIR__ . '/keys.php');
  */
 
 if (Configure::read('ENVIRONMENT') == 'PRODUCTION') {
-	Configure::write('debug', 2);
+	Configure::write('debug', 0);
 } else {
 	Configure::write('debug', 2);
 }
