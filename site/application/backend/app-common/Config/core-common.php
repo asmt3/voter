@@ -4,6 +4,9 @@
 // Load Environment
 require_once(__DIR__ . '/environment.php');
 
+// Load Keys
+require_once(__DIR__ . '/keys.php');
+
 
 /**
  * This is core configuration file.
@@ -222,18 +225,18 @@ require_once(__DIR__ . '/environment.php');
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'php'
+		'defaults' => 'database'
 	));
 
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'b24jb23kj4b23jk4b2k3jb4k2j3b4jk23b4kj23b4');
+	Configure::write('Security.salt', '23kj4b2kj3b42kj34bk2j34b2kj34b');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '48436123648167498127458714561892');
+	Configure::write('Security.cipherSeed', '2349085623489579231471906485');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -273,7 +276,7 @@ require_once(__DIR__ . '/environment.php');
  * Uncomment this line and correct your server timezone to fix
  * any date & time related errors.
  */
-	//date_default_timezone_set('UTC');
+	date_default_timezone_set('Europe/London');
 
 /**
  * `Config.timezone` is available in which you can set users' timezone string.
@@ -365,7 +368,7 @@ if (Configure::read('debug') > 0) {
 }
 
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
-$prefix = 'myapp_';
+$prefix = 'voter_';
 
 /**
  * Configure the cache used for general framework caching. Path information,

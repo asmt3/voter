@@ -11,7 +11,7 @@ sudo apt-get update
 sudo apt-get install -y apache2
 sudo a2enmod rewrite
 sudo apt-get install -y php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-mysql
-
+sudo apt-get install -y php5-gd
 # virtual hosts
 sudo ln -s /srv/config/sites-available/local.conf /etc/apache2/sites-available/local.conf
 sudo a2ensite local.conf

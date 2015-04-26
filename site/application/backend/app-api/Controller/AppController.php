@@ -40,6 +40,7 @@ class AppController extends Controller {
 	// components
 	public $components = array(
 		'RequestHandler',
+		// 'Security',
 		'Session',
 		'Auth',
 		'DebugKit.Toolbar',
@@ -104,28 +105,7 @@ class AppController extends Controller {
 	// callbacks
 
     public function beforeFilter() {
-
-
-    	// auto login load tester
-    	if(Configure::read('ENVIRONMENT') != "PRODUCTION" && ($this->request->data('loadtest') || $this->request->query('loadtest'))   ) {
-
-
-
-
-    	} else if ( !$this->Auth->user('id') ) {
-    		// if they are not logged in, create a user for them and log them in
-    		$user_id = $this->User->createEmptyUser();
-
-    		// log them in and mark as unauthed
-			$this->Auth->login(array(
-				'id' => $user_id,
-				'authed' => false,
-			));
-
-			// TODO: cache user_id in AppController to reduce calls to DB
-    	}
-
-
+    	$this->Auth->allow('*');
 		parent::beforeFilter();
 	}
 

@@ -16,7 +16,11 @@ class User extends AppModel {
 		'Fbuser' => array(
 			'className' => 'Fbuser',
 			'foreignKey' => 'user_id',
-		)
+		),
+		'Vote' => array(
+			'className' => 'Vote',
+			'foreignKey' => 'user_id',
+		),
 	);
 
 	/**
@@ -30,21 +34,6 @@ class User extends AppModel {
 			'className' => 'Friendship',
 			'foreignKey' => 'friend1_user_id',
 		),
-		
-		'Notification' => array(
-			'className' => 'Notification',
-			'foreignKey' => 'user_id',
-			'conditions' => array(
-				'Notification.seen' => false,
-				'Notification.type' => array(
-					'nudge',
-					'guessgame_challenge',
-					'friend_profile_setup',
-					'guessgame_complete',
-					'bookmark_it',
-				),
-			)
-		)
 	);
 
 
@@ -72,11 +61,6 @@ class User extends AppModel {
 		$this->create();
 		$this->save();
 		return $this->id;
-	}
-
-	public function markAsMigrated($user_id) {
-		$this->id = $user_id;
-		return $this->saveField('migrated', true);
 	}
 
 	public function areFriends($friend1_user_id, $friend2_user_id) {

@@ -179,3 +179,493 @@ Stack Trace:
 #11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-04-25 13:23:32 Error: Fatal Error (1): Class 'Facebook\FacebookSession' not found in [/srv/application/backend/app-common/Model/Fbuser.php, line 68]
+2015-04-25 13:23:32 Error: [FatalErrorException] Class 'Facebook\FacebookSession' not found
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Facebook...', '/srv/applicatio...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Facebook...', '/srv/applicatio...', 68, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Facebook...', '/srv/applicatio...', 68, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 13:24:15 Error: [MissingTableException] Table fbpages_fbusers for model FbpagesFbuser was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'fbpages_fbusers',
+  'class' => 'FbpagesFbuser',
+  'ds' => 'default',
+)
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Model.php(3640): Model->setSource('fbpages_fbusers')
+#1 /srv/application/backend/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#2 /srv/application/backend/lib/Cake/Model/Model.php(891): Model->schema()
+#3 /srv/application/backend/lib/Cake/Model/Model.php(919): Model->__isset('FbpagesFbuser')
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3716): Model->__get('FbpagesFbuser')
+#5 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1779): Model->joinModel('FbpagesFbuser', Array)
+#6 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1257): DboSource->generateAssociationQuery(Object(Fbuser), Object(AppModel), 'hasAndBelongsTo...', 'Fbpage', Array, Array, true)
+#7 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1137): DboSource->queryAssociation(Object(Fbuser), Object(AppModel), 'hasAndBelongsTo...', 'Fbpage', Array, Array, true, Array, 0, Array)
+#8 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Fbuser), Array)
+#9 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('first', Array)
+#10 /srv/application/backend/app-common/Model/Fbuser.php(96): Model->find('first', Array)
+#11 /srv/application/backend/app-api/Controller/UsersController.php(25): Fbuser->createOrUpdateFromFbToken('CAAWxVruf7BIBAJ...')
+#12 [internal function]: UsersController->initialise()
+#13 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#14 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#16 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-04-25 13:25:59 Error: Fatal Error (1): Call to a member function migrateUnauthedUserDataToAuthedUser() on a non-object in [/srv/application/backend/app-api/Controller/UsersController.php, line 37]
+2015-04-25 13:25:59 Error: [FatalErrorException] Call to a member function migrateUnauthedUserDataToAuthedUser() on a non-object
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/srv/applicatio...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/srv/applicatio...', 37, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/srv/applicatio...', 37, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 13:26:53 Error: [MissingViewException] View file "Users/json/initialise.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/json/initialise.ctp',
+)
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /srv/application/backend/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-25 13:58:10 Error: Fatal Error (1): Class 'ValidationException' not found in [/srv/application/backend/app-api/Controller/UsersController.php, line 21]
+2015-04-25 13:58:10 Error: [FatalErrorException] Class 'ValidationException' not found
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Validati...', '/srv/applicatio...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 13:58:34 Error: Fatal Error (1): Class 'ValidationException' not found in [/srv/application/backend/app-api/Controller/UsersController.php, line 21]
+2015-04-25 13:58:34 Error: [FatalErrorException] Class 'ValidationException' not found
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Validati...', '/srv/applicatio...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 13:59:12 Error: Fatal Error (1): Class 'ValidationException' not found in [/srv/application/backend/app-api/Controller/UsersController.php, line 21]
+2015-04-25 13:59:12 Error: [FatalErrorException] Class 'ValidationException' not found
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Validati...', '/srv/applicatio...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Validati...', '/srv/applicatio...', 21, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:00:03 Error: Fatal Error (1): Call to undefined method VotesController::insistPost() in [/srv/application/backend/app-api/Controller/VotesController.php, line 22]
+2015-04-25 14:00:03 Error: [FatalErrorException] Call to undefined method VotesController::insistPost()
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/srv/applicatio...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/srv/applicatio...', 22, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/srv/applicatio...', 22, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:02:26 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(VotesController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(VotesController))
+#2 /srv/application/backend/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /srv/application/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /srv/application/backend/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#8 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-04-25 14:03:06 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Controller/Component/SecurityComponent.php(239): SecurityComponent->blackHole(Object(VotesController), 'auth')
+#1 [internal function]: SecurityComponent->startup(Object(VotesController))
+#2 /srv/application/backend/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /srv/application/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#5 /srv/application/backend/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#7 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#8 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-04-25 14:03:22 Error: Fatal Error (1): Call to a member function data() on a non-object in [/srv/application/backend/app-api/Controller/VotesController.php, line 25]
+2015-04-25 14:03:22 Error: [FatalErrorException] Call to a member function data() on a non-object
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/srv/applicatio...', 25)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/srv/applicatio...', 25, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/srv/applicatio...', 25, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:19:52 Error: Fatal Error (4): syntax error, unexpected ';' in [/srv/application/backend/app-common/Model/Vote.php, line 80]
+2015-04-25 14:19:52 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:21:24 Error: Fatal Error (4): syntax error, unexpected ';' in [/srv/application/backend/app-common/Model/Vote.php, line 80]
+2015-04-25 14:21:24 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:22:15 Error: Fatal Error (4): syntax error, unexpected ';' in [/srv/application/backend/app-common/Model/Vote.php, line 80]
+2015-04-25 14:22:15 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:22:25 Error: Fatal Error (4): syntax error, unexpected ';' in [/srv/application/backend/app-common/Model/Vote.php, line 80]
+2015-04-25 14:22:25 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:23:13 Error: Fatal Error (4): syntax error, unexpected ';' in [/srv/application/backend/app-common/Model/Vote.php, line 80]
+2015-04-25 14:23:13 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 80, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:23:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) FROM `voter`.`votes` AS `Vote` INNER JOIN `voter`.`friendships` AS `Friendshi' at line 1
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Vote`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Vote`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Vote`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Vote), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('list', Array)
+#6 /srv/application/backend/app-common/Model/Vote.php(80): Model->find('list', Array)
+#7 /srv/application/backend/app-api/Controller/VotesController.php(29): Vote->getFriendshipVoteSummary('1')
+#8 [internal function]: VotesController->cast()
+#9 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-04-25 14:24:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) FROM `voter`.`votes` AS `Vote` INNER JOIN `voter`.`friendships` AS `Friendshi' at line 1
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Vote`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Vote`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Vote`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Vote), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('list', Array)
+#6 /srv/application/backend/app-common/Model/Vote.php(80): Model->find('list', Array)
+#7 /srv/application/backend/app-api/Controller/VotesController.php(29): Vote->getFriendshipVoteSummary('1')
+#8 [internal function]: VotesController->cast()
+#9 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-04-25 14:24:56 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1630 FUNCTION Vote.COUNT does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Vote`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Vote`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Vote`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Vote), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('list', Array)
+#6 /srv/application/backend/app-common/Model/Vote.php(80): Model->find('list', Array)
+#7 /srv/application/backend/app-api/Controller/VotesController.php(29): Vote->getFriendshipVoteSummary('1')
+#8 [internal function]: VotesController->cast()
+#9 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-04-25 14:26:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in field list is ambiguous
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Vote`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Vote`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Vote`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Vote), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('list', Array)
+#6 /srv/application/backend/app-common/Model/Vote.php(82): Model->find('list', Array)
+#7 /srv/application/backend/app-api/Controller/VotesController.php(29): Vote->getFriendshipVoteSummary('1')
+#8 [internal function]: VotesController->cast()
+#9 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-04-25 14:26:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Frienship.friend1_user_id' in 'on clause'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Vote`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Vote`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Vote`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Vote), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('list', Array)
+#6 /srv/application/backend/app-common/Model/Vote.php(82): Model->find('list', Array)
+#7 /srv/application/backend/app-api/Controller/VotesController.php(29): Vote->getFriendshipVoteSummary('1')
+#8 [internal function]: VotesController->cast()
+#9 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(VotesController), Array)
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VotesController), Object(CakeRequest))
+#12 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-04-25 14:32:36 Error: Fatal Error (4): syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/srv/application/backend/app-common/Model/Vote.php, line 78]
+2015-04-25 14:32:36 Error: [FatalErrorException] syntax error, unexpected ''conditions'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /api/votes/cast
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 78)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 78, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 78, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:53:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Vote.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(User), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('first', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(58): Model->find('first', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-25 14:55:18 Error: Fatal Error (1): Call to a member function notify() on a non-object in [/srv/application/backend/app-common/Model/Fbuser.php, line 244]
+2015-04-25 14:55:18 Error: [FatalErrorException] Call to a member function notify() on a non-object
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/srv/applicatio...', 244)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/srv/applicatio...', 244, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/srv/applicatio...', 244, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 14:59:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getMyVote' at line 1
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('getMyVote', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('getMyVote', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('getMyVote', Array, Array)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(827): DboSource->query('getMyVote', Array, Object(Vote))
+#5 /srv/application/backend/app-api/Controller/UsersController.php(60): Model->__call('getMyVote', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(60): Vote->getMyVote('3')
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-25 15:00:12 Error: Fatal Error (4): syntax error, unexpected '}' in [/srv/application/backend/app-common/Model/Vote.php, line 45]
+2015-04-25 15:00:12 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 45, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 45, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 20:46:03 Error: Fatal Error (4): syntax error, unexpected 'beforeFilter' (T_STRING), expecting variable (T_VARIABLE) in [/srv/application/backend/app-api/Controller/UsersController.php, line 10]
+2015-04-25 20:46:03 Error: [FatalErrorException] syntax error, unexpected 'beforeFilter' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 10, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 10, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 21:09:48 Error: Fatal Error (4): syntax error, unexpected ''id'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/srv/application/backend/app-api/Controller/UsersController.php, line 38]
+2015-04-25 21:09:48 Error: [FatalErrorException] syntax error, unexpected ''id'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/srv/applicatio...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/srv/applicatio...', 38, Array)
+#2 /srv/application/backend/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/srv/applicatio...', 38, Array)
+#3 /srv/application/backend/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-25 22:34:57 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /api/users/login
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 07:48:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 08:20:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 13:11:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 13:19:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 14:07:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 14:21:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 14:25:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-26 16:22:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'field list'
+Request URL: /api/users/initialise
+Stack Trace:
+#0 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /srv/application/backend/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /srv/application/backend/lib/Cake/Model/Model.php(3018): DboSource->read(Object(Friendship), Array)
+#5 /srv/application/backend/lib/Cake/Model/Model.php(2990): Model->_readDataSource('all', Array)
+#6 /srv/application/backend/app-api/Controller/UsersController.php(57): Model->find('all', Array)
+#7 [internal function]: UsersController->initialise()
+#8 /srv/application/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /srv/application/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /srv/application/backend/app-api/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

@@ -1,0 +1,72 @@
+body {font-family: courier;}
+.container {margin:0 auto; max-width:960px;}
+.container-fluid {margin:40px auto; max-width:960px;}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
+
+.btn {
+	text-transform: uppercase;
+	
+	font-size: 1.3em;
+	color:#fff;
+	background:#3b5998;
+	text-shadow:none;
+}
+.btn:hover {background: darkblue; color:#fff;}
+
+
+.intro {margin:1em 0;}
+
+
+#flag, #flag li {height:80px;}
+
+#flag {
+	list-style: none;
+	margin:0;
+	padding:0;
+	border-radius:2px;
+	overflow: hidden;
+	background:center center url(../img/question-mark.png) no-repeat;
+	border:2px #ddd solid;
+}
+#flag li {
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+	width:9.09090909%;  /* 11 choices */
+	float:left;
+}
+
+.share-cta {display: none;}
+
+
+.parties {margin:1em 0;}
+
+.party {padding:1em;}
+.party a {display: block; padding:0.5em; border-radius:2px; text-decoration: none; border:2px solid #fff; font-size:1.2em;}
+.party .party-colour { display:block; height:50px; border-radius:2px;}
+.party .party-name {display:block; text-align: center;}
+
+.party a.selected {background:#eee; border:2px solid #ccc;}
+
+.faq dd {margin-bottom: 1em;}
+
+
+/*Friends*/
+.friends {list-style: none; padding:0;}
+.friends li {margin:1em;}
+
+/*Login*/
+div.login {margin-top:40px; }
+img.login-grid {max-width: 100%}
+.login .cta {text-align: center;}
+.share-cta {margin-top:2em;text-align: center;}
+.login img {max-width: 100%; margin:2em 0;}
+
+
+
+@media (min-width: 768px) {
+
+	h1 {font-size: 36px;}
+	h2 {font-size: 30px;}
+
+}

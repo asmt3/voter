@@ -120,3 +120,7 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+
+// Load FB 
+require_once(__DIR__ . '/../Vendor/Facebook/autoload.php');
