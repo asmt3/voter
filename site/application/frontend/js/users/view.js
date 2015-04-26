@@ -69,6 +69,10 @@ $(function(){
 
 		var share_href = $(this).data('share-href');
 
+		// append another timestamp to make sure share is fresh
+		share_href += '/' + new Date().getTime();
+
+
 		FB.ui({
 		  method: 'share',
 		  href: share_href,

@@ -42,7 +42,7 @@ class UsersController extends AppController {
 		// GET GAME DATA
 
     	// get the user
-		$user = $this->User->Friendship->find('all', array(
+		$user = $this->User->find('first', array(
 			'fields' => array(
 				'User.id',
 				'Vote.id',
