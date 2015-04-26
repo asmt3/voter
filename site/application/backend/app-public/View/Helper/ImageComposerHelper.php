@@ -92,7 +92,6 @@ class ImageComposerHelper extends AppHelper {
 			}
 
 			$new_x = $x + ($party_total / $total) * $width;
-			$new_x = $x + 120;
 			
 			// Draw a white rectangle
 			imagefilledrectangle($im, $x, 0, $new_x, $height, $colour);
