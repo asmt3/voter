@@ -13,7 +13,7 @@ $(function(){
 
 		    	// assume it worked!
 		    	if (voter_login_response.vote) {
-		    		window.location.href = '/friends';
+		    		window.location.href = '/me';
 		    	} else {
 		    		window.location.href = '/me';
 		    	}
