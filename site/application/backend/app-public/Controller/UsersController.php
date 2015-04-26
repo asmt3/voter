@@ -74,8 +74,23 @@ class UsersController extends AppController {
 		$parties = $this->Party->getAllRandom();
 
 		
-		$my_vote = $this->User->Vote->getMyVote($me_user_id);
+		// their vote doesn't come into if not friends
+		$my_vote = $areFriends ? $this->User->Vote->getMyVote($me_user_id) : false;
+
 		$friendshipVoteSummary = $this->User->Vote->getFriendshipVoteSummary($user_id, $me_user_id);
+
+		// get this users vote, and append
+		$their_vote = $this->User->Vote->getMyVote($user_id);
+
+		
+		if ($their_vote) {
+
+			
+
+			$friendshipVoteSummary[$their_vote['Vote']['party_id']]['votes']
+			 = $friendshipVoteSummary[$their_vote['Vote']['party_id']]['votes'] + 1;
+		}
+		
 
 
 		$this->set(compact('user', 'parties', 'my_vote', 'friendshipVoteSummary', 'areFriends'));
