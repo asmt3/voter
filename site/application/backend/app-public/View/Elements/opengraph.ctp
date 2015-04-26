@@ -22,7 +22,7 @@
 
     <meta 
     	property="og:image" 
-    	content="<?php echo Configure::read('BASE_URL')?>/img/flags/all-parties.png">
+    	content="<?php echo Configure::read('BASE_URL')?>/img/all-parties.png">
 
     <meta 
         property="og:image:width" 

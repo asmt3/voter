@@ -9,7 +9,7 @@
 		<p>If Facebook users and their friends were in charge, what would be the composition of the new UK government?</p>
 
 		<?php //echo $this->ImageComposer->allVotesFlag($allVoteSummary, $parties,1200,630,600, 315); ?>
-		<img src="/img/flags/all-parties-small.png">
+		<img src="/img/all-parties-small.png">
 
 		<p class="cta">
 			To add your vote...

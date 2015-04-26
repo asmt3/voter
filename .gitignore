@@ -1,8 +1,13 @@
 .DS_Store
 .elasticbeanstalk/
 .vagrant/
+keys/
 site/application/frontend/img/flags/*
 !site/application/frontend/img/flags/
 site/application/backend/app-common/Config/environment.php
 site/application/backend/app-common/Config/database-common.php
 site/application/backend/app-common/Config/keys-common.php
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
