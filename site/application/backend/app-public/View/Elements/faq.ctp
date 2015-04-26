@@ -27,26 +27,14 @@
 
 		<dt>Isn't it a bit simplistic to reduce voting down to a single colour? </dt>
 		<dd>
-			Yes, definitely. It would probably be wiser to vote based on <a href="https://voteforpolicies.org.uk/">policies not parties</a>.
+			Yes, definitely. It would probably be wiser to <a href="https://voteforpolicies.org.uk/">vote for policies</a>.
 		</dd>
-
-		<!-- <dt>
-			Will you ever give my data to third parties or use it any other way than to make these shareable colour graphics?
-		</dt>
-		<dd>
-			Nopedy, nope, nope. Definitely never.
-		</dd> -->
 
 		<dt>Is it possible for my friends to know which colour/party I vote for?</dt>
 
 		<dd>
 			Through a process of deduction, you might be able to work it out. Especially if there are few votes in your friendship group.
 		</dd>
-
-		<!-- <dt>
-			Is the maker of this app affiliated with any political group or with Parties Not Policies?
-		</dt>
-		<dd>No.</dd> -->
 
 		<dt>Are you going to share personal data you collect with any third parties?</dt>
 		<dd>
