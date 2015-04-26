@@ -53,7 +53,7 @@ class ShareablesController extends AppController {
 		}
 
 		$is_facebook = strpos($_SERVER['HTTP_USER_AGENT'],'facebook') !== false;
-		$is_debug = (Configure::read('debug') > 0) && $this->request->query('debug');
+		$is_debug = $this->request->query('debug');
 
 		if (!$is_facebook and !$is_debug) {
 			//Anyone else, just redirect to the main page
