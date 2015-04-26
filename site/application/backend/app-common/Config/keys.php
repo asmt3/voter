@@ -19,13 +19,12 @@ switch (Configure::read('ENVIRONMENT')) {
 		
 	// 	break;
 
-	// case 'PRODUCTION':
+	case 'PRODUCTION':
 
-	// 	Configure::write('FACEBOOK_APP_ID', '826583690709477');
-	// 	Configure::write('FACEBOOK_APP_SECRET', '3ae27236618eaa3444af82ecc49030fe');
-	// 	Configure::write('FACEBOOK_APP_NAMESPACE', 'friend-or-fraud');
+		Configure::write('FACEBOOK_APP_ID', '1602360956677138');
+		Configure::write('FACEBOOK_APP_SECRET', '7f6f1c8eac7606d8f6abbc73a07f7c78');
 		
-	// 	break;
+		break;
 	
 	default:
 		throw new Exception("Unknown environment");
