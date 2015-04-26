@@ -6,7 +6,7 @@ var data = <?php echo json_encode(compact('my_vote', 'friendshipVoteSummary'), J
 <div class="intro">
   <div class="row">
 	<div class="col-md-12">
-		<h1>If <?php echo $user['Fbuser']['first_name'];?> and their friends were in charge&hellip;</h1>
+		<h1>If <?php echo $user['Fbuser']['first_name'];?> and <?php echo $user['Fbuser']['first_name'];?>'s friends were in charge&hellip;</h1>
 		<p>&hellip;this would be the colour of their government:</p>
 		<?php echo $this->element('flag'); ?>
 

@@ -7,7 +7,7 @@
 	$flag_url = Configure::read('BASE_URL') . '/img/flags/' . $flag_filename;
 
 
-	$title = 'If ' . $user['Fbuser']['first_name'] . ' and their friends were in charge, this would be the colour of the new UK parliament.';
+	$title = 'If ' . $user['Fbuser']['first_name'] . ' and ' . $user['Fbuser']['first_name'] . '\'s friends were in charge, this would be the colour of the new UK parliament.';
 
 	
 
@@ -38,7 +38,7 @@
 
 	// var_dump($partiesWithVotes);
 
-	$description = 'If ' . $user['Fbuser']['first_name'] . ' and their friends were in charge, the new UK parliament would be ';
+	$description = 'If ' . $user['Fbuser']['first_name'] . ' and ' . $user['Fbuser']['first_name'] . '\'s friends were in charge, the new UK parliament would be ';
 
 
 	foreach ($partiesWithVotes as $k => $partyWithVotes) {
@@ -54,7 +54,7 @@
 
 	}
 
-	$description .= ' Click here to change their government.';
+	$description .= ' Vote to change their government.';
 
 
 ?>

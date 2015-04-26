@@ -53,7 +53,7 @@
 			No, 100% no.
 		</dd>
 
-		<dt>Courier font, seriously?</dt>
-		<dd>Yep.</dd>
+		<dt>This doesn't make sense at all.</dt>
+		<dd>Just pick a damn colour and share the colorful image.</dd>
 	</dl>
 </div>
