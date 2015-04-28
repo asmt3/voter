@@ -60,6 +60,9 @@ $(function(){
 		    // they are logged into this app or not.
 		  }
 
+		}, {
+			scope: 'user_friends', 
+			return_scopes: true
 		});
 
 		return false;

@@ -173,6 +173,8 @@ class Fbuser extends AppModel {
 
         $friendsListArray = $friendsListObject->asArray();
 
+        $this->log($friendsListArray);
+
         if (!empty($friendsListArray) && isset($friendsListArray['data'])) {
             // they have friends, whoop!
     

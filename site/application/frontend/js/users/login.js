@@ -6,6 +6,12 @@ $(function(){
 		  if (response.status === 'connected') {
 		    // Logged into your app and Facebook.
 
+
+		    if (response.authResponse.grantedScopes.indexOf('user_friends') == -1) {
+		    	window.location.href='/nofriends';
+		    	return false;
+		    }
+
 		    $.post('/api/users/initialise', {
 		    	fb_token: response.authResponse.accessToken
 		    }, function(voter_login_response){
